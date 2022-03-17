@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size:62.5%
+}
+body{
+    background-color: #51816c;
+    
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Serif 4', sans-serif;
+    color: whitesmoke;    
+}
+
+.header{
+    height: 7rem;
+    width: 100vw;
+    margin: 0 auto;
+    background-color:#262A28 ;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+    .header-content {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .header-left{
+        float: left;
+    }
+    .header-right{
+        float: right;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .heading{
+        font-size:3.5rem ;
+        padding: 0;
+    }
+    .heading-primary-sub{
+        font-size:2.5rem ;
+        padding: 0;
+    }
+
+.first-block{
+    background: linear-gradient(to right bottom, rgba(69, 84, 100, 0.5), rgba(38, 46, 55, 0.8)),
+    center / cover no-repeat url("pot1.jpg");
+    height: 70vh;
+    width: 100%;  
+}
+.first-block-text{
+    width: 55%;
+    padding-top: 20rem ;
+    margin: auto;
+}
+.heading-primary{
+    font-size: 6rem;
+    font-weight: 100;
+   ;
+}
+.heading-secondary{
+    color:whitesmoke;
+    text-align: center;
+    letter-spacing: .2rem;
+    padding-top:2rem;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.bold{
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    padding: 2rem;
+    grid-column-gap: 6rem;
+    grid-row-gap: 2rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 70%;
+    text-align: center;
+}
+.container{
+    width: 25rem;
+    margin: 0 auto;
+    padding: 2rem;    
+}
+.image-container {
+    height: 40rem;
+    width: 40rem;
+    -webkit-clip-path:circle(25% at 50% 50%);
+    clip-path: circle(25% at 50% 50%);
+    margin: -8rem 0;
+    transform: translateX(-9rem);
+}
+.img-set{
+    width: 100%;
+    transform: translateX(-3rem);
+}
+.content{
+    text-align:center;
+    font-size: 1.8rem;
+    width: 100%;    
+}
+
+.blk-title{
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+}
+
+.third-block-img{
+    height: 40rem;
+    width:30rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.third-block{
+        display: table;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+.third-block-wrapper{
+    width: 33.3333333%;
+    margin: 1rem 3rem; 
+    display: table-cell;
+
+}
+.third-block-content{
+    padding: 0 0 0 5rem;
+    width: 66.666666667%;
+    font-size: 2rem;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+ul{
+    font-size: 1.8rem;
+    max-width:35rem;
+}
+#estimate{
+    background: linear-gradient(to right bottom, rgba(69,84,100, 0.5), rgba(38,46,55, 0.8)), url("pot3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 5rem 0;
+    
+}
+.estimate{
+	background:#3C413F;
+	color: whitesmoke;
+	padding:15px;
+    margin:auto;
+    height: 30rem;
+    width:60rem;
+    font-size: 1.8rem;
+}
+
+.estimate-title{
+	font-size: 2rem;
+	margin-bottom:2rem;
+    border-bottom: 1px solid #999;
+    width: fit-content;
+   
+}
+.estimate-display {
+	border: 2px solid white;
+	border-radius: 0.5rem;
+	padding: var(--m-size);
+}
+input[type=range] {
+    -webkit-appearance: none;
+      width: 100%;
+      background: transparent;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.5rem;
+    cursor: pointer;
+    
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: whitesmoke;
+    border-radius: 2.5rem;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0 solid #000000;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--primary-green);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.75rem;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: whitesmoke;
+  }
+
+  .btn,
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    
+    /*change for the <button> element*/
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover,
+    .btn:focus{
+        
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        background-color: #55c57a;
+    }
+
+
+.btn-green{
+    background-color: #51816c ;
+    color: #fff;    
+}
+
+  /*  MEDIA QUERIES */
+
+@media (max-width: 75em) {  /* For Tab-land  75em= 1200px/16px */
+    html {
+        font-size: 56.25%;}  }  /* 1rem = 9px; 9px/16 = 56.25% */
+
+@media (max-width: 56.25em) {   /* For Tab-port  56.25em= 900px/16px */
+    html {
+        font-size: 50%;} 
+    .grid  {
+        max-width: 60rem;
+        grid-row-gap: 6rem;
+        grid-template-columns: 100%;}
+    .third-block{
+        max-width: 60rem;
+    }
+    .third-block-wrapper{
+        width: 40%;
+        margin: 1rem 3rem; 
+        display: table-cell;
+    
+    }
+    .third-block-content{
+        padding: 0 0 0 3rem;
+        width: 60%;}
+    .third-block-img {
+        width: 100%;
+    }}     /* 1rem = 8px; 8px/16 = 50% */
+@media (max-width: 37.5em) {   /* For phone 37.5em= 600px/16px */
+    html {
+        font-size: 31.25%;}
+    .first-block{
+        height: 40vh;
+    }
+    .first-block-text{
+        width: 70%;
+        padding-top: 10rem ;
+        margin: auto;}
+        .grid  {
+            grid-row-gap: 0;}
+    .third-block-wrapper{
+        width: 40%;
+        margin: 1rem 3rem; 
+        display: table-row;
+            
+            }
+    .third-block-content{
+        padding: 0 0 0 3rem;
+        width: 60%;
+        display: table-row;} }     /* 1rem = 4px; 5px/16 = 31.25% */
+
+@media (min-width: 112.5em) {   /* For big-desktop 112.5em= 1800px/16px */
+    html {
+        font-size: 75%;}  }      /* 1rem = 12px; 12px/16 = 75% */
